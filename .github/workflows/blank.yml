@@ -1,0 +1,12 @@
+import discord
+from discord import Intents
+
+intents = discord.Intents.default()
+intents.messages = True
+client = discord.Client(intents=intents)
+
+@client.event
+async def on_ready():
+    print("Online")
+
+client.run("MTI5NDI2ODIyMzg3MjU2OTM2NA.G1SPl8.GnEhNftaxdgYYjZIBtNPvfi7FquhP3_rmrSnzQ")
